@@ -1,0 +1,354 @@
+/*Background images*/
+
+.Sigiri{
+    background-image: url(Images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+/*Body styling*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(17,17,17);
+}
+
+#container_sec{
+    border-radius: 10px;
+    min-width: 240px;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    background: #ffff;
+    font-size: 21px;
+}
+
+#container_nav{
+    border-radius: 10px;
+    min-width: 240px;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    background: #ffff;
+    font-size: 17px;
+}
+
+h1,h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    margin: 0.5em 0;
+}
+
+p{
+    text-align: center;
+    line-height: 1.6;
+}
+
+main{
+      padding: 1em;
+      margin: 0;
+}
+
+hr {
+    border-width: 3px;
+    color: black;
+} 
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#SL{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 472;
+    height: 266;
+}
+
+#Sigiriya{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 472;
+    height: 266;
+}
+
+#para_1{
+    font-weight: bold;
+    font-size: 28px;
+}
+
+#Sigi_1{
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Sigi_2{
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer */
+
+main{
+    padding: 1em;
+    margin: 0;
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 20px;
+    margin: 0px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 40px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+#foot{
+    width: 100%;
+    margin: 0;
+    background: #2a2a2a;
+    border-radius: 5px;
+}
+
+/* ANIMATION */
+
+.fade-in-image { 
+    animation: fadeIn 2s;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 2s;
+}
+
+@keyframes fadeIn {
+    0% { 
+        opacity: 0; 
+    }
+    100% { 
+        opacity: 1;
+     }
+  }
+
+@-webkit-keyframes fadeIn {
+    0% { 
+        opacity: 0; 
+    }
+    100% { 
+        opacity: 1;
+     }
+  }
+
+/* Nav Bar */
+
+.navText{
+    padding-left: 50px;
+    font-weight: bold;
+}
+
+.navBar li{
+    float: left;
+}
+
+.navBar ul{
+    border-radius: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.navBar li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+    background-position: .5em center;
+    min-height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.navBar li a:hover{
+    background-color: lightblue;
+}
+
+.navBar li:nth-of-type(1) a {
+background-image: url(Images/Icons/home.png);
+}
+
+.navBar li:nth-of-type(2) a {
+    background-image: url(Images/Icons/beach.png);
+}
+
+.navBar li:nth-of-type(3) a {
+    background-image: url(Images/Icons/trees.png);
+}
+
+.navBar li:nth-of-type(4) a {
+    background-image: url(Images/Icons/star.png);
+}
+
+.navBar li:nth-of-type(5) a {
+    background-image: url(Images/Icons/star.png);
+}
+
+.navBar li:nth-of-type(6) a {
+    background-image: url(Images/Icons/bicycle.png);
+}
+
+.navBar li:nth-of-type(7) a {
+    background-image: url(Images/Icons/information.png);
+}
+
+.navBar li:nth-of-type(8) a {
+    background-image: url(Images/Icons/donation.png);
+}
+
+/* Mobile */
+
+@media screen and (max-width: 900px) {
+    .Sigiri{
+        background-image: url(Images/bg.jpg);
+        background-repeat: repeat;
+        background-size: 100% auto;
+    }
+
+    #container_sec{
+        border-radius: 10px;
+        min-width: 240px;
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
+        background: #ffff;
+        font-size: 14px;
+    }
+
+    #SL{
+        width: 40%;
+        height: 40%;
+    }
+
+    #Sigiriya{
+        width: 60%;
+        height: 60%;
+    }
+
+    /*Nav Bar*/
+
+    .navText{
+        display: none;
+    }
+
+    .navBar {
+        width: 100%;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        overflow: auto;
+      }
+      
+    .navBar a {
+        float: left;
+        text-align: center;
+        margin: 0 10px ;
+        width: 100%;
+        padding: 12px 0;
+        transition: all 0.3s ease; 
+        color: white;
+        font-size: 36px;
+        text-align: left; /* If you want the text to be left-aligned on small screens */
+    }
+      
+      .navBar a:hover {
+        background-color: #000;
+      }
+    
+    .navBar li:nth-of-type(1) a {
+        background-image: url(Images/Icons/home.png);
+    }
+    
+    .navBar li:nth-of-type(2) a {
+        background-image: url(Images/Icons/beach.png);
+    }
+    
+    .navBar li:nth-of-type(3) a {
+        background-image: url(Images/Icons/trees.png);
+    }
+    
+    .navBar li:nth-of-type(4) a {
+        background-image: url(Images/Icons/star.png);
+    }
+    
+    .navBar li:nth-of-type(5) a {
+        background-image: url(Images/Icons/star.png);
+    }
+    
+    .navBar li:nth-of-type(6) a {
+        background-image: url(Images/Icons/bicycle.png);
+    }
+    
+    .navBar li:nth-of-type(7) a {
+        background-image: url(Images/Icons/information.png);
+    }
+    
+    .navBar li:nth-of-type(8) a {
+        background-image: url(Images/Icons/donation.png);
+    }
+
+    /*Section Images*/
+
+    #para_1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    /* Footer */
+
+    footer ul{
+        list-style-type: none;
+        padding: 20px;
+        margin: 0px;
+        font-size: 14px;
+    }
+    
+    footer a{
+        text-decoration: none;
+        color: #ffffff;
+        line-height: 25px;
+    }
+    
+    footer a:hover{
+        text-decoration: underline;
+        color: #ffffff;
+    }
+    
+    #foot{
+        width: 100%;
+        margin: 0;
+        background: #2a2a2a;
+        border-radius: 5px;
+    }
+  }

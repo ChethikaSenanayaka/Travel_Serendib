@@ -1,0 +1,648 @@
+/*Background images*/
+
+.home_p{
+    background-image: url(Images/Home1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.beaches{
+    background-image: url(Images/Unawatuna.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.wildlife{
+    background-image: url(Images/Wildlife.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.Activity{
+    background-image: url(Images/Beaches.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.About{
+    background-image: url(Images/buddha_img.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.donate{
+    background-image: url(Images/Relic.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+/*Body styling*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(17,17,17);
+}
+
+#container_sec{
+    border-radius: 10px;
+    min-width: 240px;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    background: #ffff;
+    font-size: 21px;
+}
+
+#container_nav{
+    border-radius: 10px;
+    min-width: 240px;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    background: #ffff;
+    font-size: 17px;
+}
+
+h1,h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    margin: 0.5em 0;
+}
+
+h4{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #000;
+    margin: 0.5em 0;
+}
+
+p{
+    text-align: center;
+    line-height: 1.6;
+}
+
+main{
+      padding: 1em;
+      margin: 0;
+}
+
+hr {
+    border-width: 3px;
+    color: black;
+  } 
+
+#SL{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 472;
+    height: 266;
+}
+
+#welcome{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 472;
+    height: 266;
+}
+
+#beach_SL{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 472;
+    height: 266;
+}
+
+#wild{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 472;
+    height: 266;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* Cards */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+  
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .container{
+    padding: 2px 16px;
+  }
+
+/* FORM */
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=number], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+  
+input[type=submit] {
+    background-color:black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+  
+input[type=submit]:hover {
+    background-color: white;
+}
+  
+.containerform {
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+  
+.column1 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+  
+.column2 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 15px;
+    color: white;
+    background-color: lightblue;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 24px;
+}
+
+/*Home page containers*/
+
+.Spice{
+    float: left;
+    margin-right: 15px;
+}
+
+.beach{
+    font-weight: bold;
+    color: white;
+}
+
+#para_1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.spice{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.spice_text{
+    padding-left: 20px;
+}
+
+.food{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.food_text{
+    padding-left: 20px;
+}
+
+.people{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#friendly{
+    float: right;
+    margin-left: auto;
+    display: block;
+}
+
+#dishes{
+    float: left;
+    height: 45%;
+    width: 45%;
+}
+
+.people_text{
+    padding-right: 20px;
+}
+
+/* Beaches containers*/
+
+.coast{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.coast_text{
+    padding-left: 20px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hotel{
+    font-weight: bold;
+}
+/* Wildlife containers*/
+
+.table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid lightgray;
+}
+
+/* Footer */
+
+main{
+    padding: 1em;
+    margin: 0;
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 20px;
+    margin: 0px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 40px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+#foot{
+    width: 100%;
+    margin: 0;
+    background: #2a2a2a;
+    border-radius: 5px;
+}
+
+/* Nav Bar */
+
+.navText{
+    padding-left: 50px;
+    font-weight: bold;
+}
+
+.navBar li{
+    float: left;
+}
+
+.navBar ul{
+    border-radius: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.navBar li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+    background-position: .5em center;
+    min-height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.navBar li a:hover{
+    background-color: lightblue;
+}
+
+.navBar li:nth-of-type(1) a {
+background-image: url(Images/Icons/home.png);
+}
+
+.navBar li:nth-of-type(2) a {
+    background-image: url(Images/Icons/beach.png);
+}
+
+.navBar li:nth-of-type(3) a {
+    background-image: url(Images/Icons/trees.png);
+}
+
+.navBar li:nth-of-type(4) a {
+    background-image: url(Images/Icons/star.png);
+}
+
+.navBar li:nth-of-type(5) a {
+    background-image: url(Images/Icons/star.png);
+}
+
+.navBar li:nth-of-type(6) a {
+    background-image: url(Images/Icons/bicycle.png);
+}
+
+.navBar li:nth-of-type(7) a {
+    background-image: url(Images/Icons/information.png);
+}
+
+.navBar li:nth-of-type(8) a {
+    background-image: url(Images/Icons/donation.png);
+}
+
+/* Mobile View */
+
+@media screen and (max-width: 900px) {
+    .home_p{
+        background-image: url(Images/Home1.jpg);
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+    }
+
+    .beaches{
+        background-image: url(Images/Unawatuna.jpg);
+        background-repeat: repeat;
+        background-size: 100% auto;
+    }
+    
+    .wildlife{
+        background-image: url(Images/Wildlife.jpg);
+        background-repeat: repeat;
+        background-size: 100% auto;
+    }
+
+    .Activity{
+        background-image: url(Images/Beaches.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+    
+    .About{
+        background-image: url(Images/buddha_img.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+    
+    .donate{
+        background-image: url(Images/Relic.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+
+    #container_sec{
+        border-radius: 10px;
+        min-width: 240px;
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
+        background: #ffff;
+        font-size: 14px;
+    }
+
+    #SL{
+        width: 40%;
+        height: 40%;
+    }
+
+    #welcome{
+        width: 60%;
+        height: 60%;
+    }
+
+    /*Nav Bar*/
+
+    .navText{
+        display: none;
+    }
+
+    .navBar {
+        width: 100%;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        overflow: auto;
+      }
+      
+    .navBar a {
+        float: left;
+        text-align: center;
+        margin: 0 10px ;
+        width: 100%;
+        padding: 12px 0;
+        transition: all 0.3s ease; 
+        color: white;
+        font-size: 36px;
+        text-align: left; /* If you want the text to be left-aligned on small screens */
+    }
+      
+      .navBar a:hover {
+        background-color: #000;
+      }
+    
+    .navBar li:nth-of-type(1) a {
+        background-image: url(Images/Icons/home.png);
+    }
+    
+    .navBar li:nth-of-type(2) a {
+        background-image: url(Images/Icons/beach.png);
+    }
+    
+    .navBar li:nth-of-type(3) a {
+        background-image: url(Images/Icons/trees.png);
+    }
+    
+    .navBar li:nth-of-type(4) a {
+        background-image: url(Images/Icons/star.png);
+    }
+    
+    .navBar li:nth-of-type(5) a {
+        background-image: url(Images/Icons/star.png);
+    }
+    
+    .navBar li:nth-of-type(6) a {
+        background-image: url(Images/Icons/bicycle.png);
+    }
+    
+    .navBar li:nth-of-type(7) a {
+        background-image: url(Images/Icons/information.png);
+    }
+    
+    .navBar li:nth-of-type(8) a {
+        background-image: url(Images/Icons/donation.png);
+    }
+
+    /*Section Images*/
+
+    .Spice{
+        float: left;
+        margin-right: 15px;
+    }
+    
+    .beach{
+        font-weight: bold;
+        color: white;
+    }
+    
+    #para_1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    .spice{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    
+    .spice_text{
+        padding-left: 20px;
+    }
+    
+    .food_text{
+        float: centre;
+    }
+
+    #dishes{
+        float: left;
+    height: 60%;
+    width: 60%;
+    }
+    
+    .people{
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+    
+    #friendly{
+        float: right;
+        margin-left: auto;
+        display: block;
+    }
+    .people_text{
+        padding-right: 20px;
+    }
+
+    #Mirissa{
+        width: 90%;
+        height: 90%;
+    }
+
+    #arugam{
+        width: 90%;
+        height: 90%;
+    }
+
+    #Horton{
+        width: 90%;
+        height: 90%;
+    }
+    
+    #Yala_NP{
+        width: 90%;
+        height: 90%;
+    }
+
+    iframe{
+        width:"500px";
+        height:"450px";
+    }
+
+    /* Footer */
+
+    footer ul{
+        list-style-type: none;
+        padding: 20px;
+        margin: 0px;
+        font-size: 14px;
+    }
+    
+    footer a{
+        text-decoration: none;
+        color: #ffffff;
+        line-height: 25px;
+    }
+    
+    footer a:hover{
+        text-decoration: underline;
+        color: #ffffff;
+    }
+    
+    #foot{
+        width: 100%;
+        margin: 0;
+        background: #2a2a2a;
+        border-radius: 5px;
+    }
+  }
