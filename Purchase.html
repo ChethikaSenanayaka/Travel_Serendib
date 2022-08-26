@@ -45,48 +45,81 @@
             <p>Help us join the cause!</p>
             <br>
           </section>
-          <section id="MainForm">
+          <!--Form 1-->
+          <section id="Form">
             <div class="containerform">
-                <form action="purchase_and_donate.html">
-                    <div class="row">
-                        <div class="column1">
-                            <label for="fname">First Name</label>
-                        </div>
-                        <div class="column2">
-                            <input type="text" id="fname" name="firstname" placeholder="Your Name">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="column1">
-                            <label for="lname">Last Name</label>
-                        </div>
-                        <div class="column2">
-                            <input type="text" id="lname" name="lastname" placeholder="Your last name">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="column1">
-                            <label for="payment">Amount</label>
-                        </div>
-                        <div class="column2">
-                            <input type="number" id="payment" name="payment" placeholder="Donate Amount">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="column1">
-                            <label for="Acc">Acc No.</label>
-                        </div>
-                        <div class="column2">
-                            <input type="text" id="Acc" name="Acc" placeholder="Account Details">
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                        <input type="submit" value="Submit">
-                      </div>
-                </form>
-            </div>
+              <form action="" class="contact-col" id="formDonation">
+                <div class="row">
+                  <div class="column1">
+                    <label for="nameinput">Name</label>
+                  </div>
+                  <div class="column2">
+                    <input type="text" id="name" name="username" placeholder="Enter your name" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column1">
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="column2">
+                    <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column1">
+                    <label for="Address">Address</label>
+                  </div>
+                  <div class="column2">
+                      <textarea  rows="3" id="address" placeholder="Enter your address" required ></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column1">
+                  </div>
+                  <div class="column2">
+                      <label for="Donations" id="Fixed_Donate" class="lbdate">Select fixed Donation values from the list</label>
+                      <select name="language" class="custom-select" id="Fixed_Donate" multiple >
+                          <option value="100">LKR 100 </option>
+                          <option value="500">LKR 250 </option>
+                          <option value="1000">LKR 500 </option>
+                          <option value="2500">LKR 1000 </option>
+                          <option value="5000">LKR 2500 </option>
+                          <option value="5000">LKR 5000 </option>
+                        </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column1">
+                      <label for="donateComment">Donation comment</label>
+                  </div>
+                  <div class="column2">
+                      <textarea  rows="3" id="donateComment" placeholder="Enter Donation Comment"></textarea>
+                  </div>
+                </div>
+              </form>
+              <form class="paymentDetails" action=""  method="post">
+                      <label>
+                        <span class="nmoncd">Name on Card</span>
+                        <input name="name" type="text" placeholder="Johnny Appleseed">
+                      </label>
+                      <label> 
+                        <span class="cdnum">Card Number <span>(Dashes not required)</span></span>
+                        <input name="card_no" maxlength="16" type="text" placeholder="XXXX-XXXX-XXXX-XXXX">
+                      </label>
+                      <label class="exp">
+                        <span class="expdt">Exp. Date</span>
+                        <input name="expiredate" maxlength="5" type="text" placeholder="MM/YY">
+                      </label>
+                      <label class="cvv_num">
+                        <span class="cvcnum">cvv</span>
+                        <input name="cvv" maxlength="3" type="text" placeholder="XXX">
+                      </label>
+                      <button class="donate_button" type="submit" onclick="inputValid()"> Donate! </button>
+              </form>
+          </div>
         </section>
+        <br>
+        <h2>Local Hand-crafted Merchandise</h2>
         <br>
         <div class="card">
           <img src="Images/masks.jpg" class="center" style="width: 50%;">
@@ -117,5 +150,6 @@
           </ul>
         </nav>
       </footer>
+      <script src="Purchase.js"></script>
   </body>
 </html>

@@ -3,7 +3,10 @@
 .Anuradhapura{
     background-image: url(Images/Anuradhapura.jpg);
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*Body styling*/
@@ -72,7 +75,7 @@ hr {
     height: 266;
 }
 
-#Sigiriya{
+#Anura{
     display: block;
     margin-left: auto;
     margin-right: auto;

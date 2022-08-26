@@ -69,6 +69,172 @@
               <p>Price: LKR 1200+</p>
               <p>Get more information at <a href="https://www.slkarting.com/">the official site.</a> </p>
             </div>
+            <br>
+              <!--Form 2
+              <form>
+                <div class="col-1">
+                  <label for="ticketChoice">Choice of Ticket</label>
+                </div>
+                <div class="col-2">
+                    <select name="cmbChoice" id="cmbChoice" class="select__item" onchange="calculateCost();">
+                        <option value="" selected disabled>Select Ticket Category</option>
+                        <option value="0">Foreign Adult Pass</option>
+                        <option value="1">Foreign Child Pass</option>
+                        <option value="2">Local Adult Pass</option>
+                        <option value="2">Local Child Pass</option>
+                        <option value="2">Annual Pass-Foreign</option>
+                        <option value="2">Annual pass-Local</option>
+                    </select>
+                </div>
+                <div class="noOfPeople">
+                  <label>
+                    <span class="adult">Adult</span>
+                    <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+                  </label>
+                  <label> 
+                    <span class="child">Children</span>
+                    <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+                  </label>
+                </div>
+                <div class="dates">
+                  <label for="checkin-date">Check-in Date</label>
+                  <input type="date" id="checkin-date" name="checkin" required>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <span>Enter number of Tokens</span>
+                      </div>
+                    <div class="col-2">
+                    <input id="noOfTokens" name="noOfTokens" min="0" type="number" placeholder="Enter Number of Tokens" onblur="calculateCost();">
+                </div>
+                <br>
+                <button class="order_button" type="submit">Place order!</button>
+                <br>
+              </form>
+              <hr>
+              <br>
+              <form>
+                <label for="TicketChoice"> Choice of Ticket </label>
+                <select name="cmbChoice" id="cmbChoice" class="select__item" onchange="calculateCost();">
+                  <option value="" selected disabled>Select Ticket Category</option>
+                  <option value="0">Foreign Adult Pass</option>
+                  <option value="1">Foreign Child Pass</option>
+                  <option value="2">Local Adult Pass</option>
+                  <option value="2">Local Child Pass</option>
+                  <option value="2">Annual Pass-Foreign</option>
+                  <option value="2">Annual pass-Local</option>
+                </select>
+                <label>
+                  <span class="adult">Adult</span>
+                  <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+                </label>
+                <label> 
+                  <span class="child">Children</span>
+                  <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+                </label>
+              </form>-->
+              <div class="containerform" class="booking-form" id="boxform">
+                <form  class="contact-col frmtickets" id="frmPurchase">
+                    <div class="row">
+                        <div class="column1">
+                          <label for="ticketChoice">Choice of Ticket</label>
+                        </div>
+                        <div class="column2">
+                            <select name="cmbChoice" id="cmbChoice" class="select__item" onchange="calculateCost();">
+                                <option value="" selected disabled>Select Ticket Category</option>
+                                <option value="0">Foreign Adult Pass</option>
+                                <option value="1">Foreign Child Pass</option>
+                                <option value="2">Local Adult Pass</option>
+                                <option value="2">Local Child Pass</option>
+                                <option value="2">Annual Pass-Foreign</option>
+                                <option value="2">Annual pass-Local</option>
+                            </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="column1">
+                            <span>Duration</span>
+                            <label for=""></label>
+                        </div>
+                        <div class="column2">
+                            <select name="cmbDuration" id="cmbDuration" class="select__item" onchange="calculateCost();">
+                                <option value="" selected disabled>Select the duration</option>
+                                <option value="0">3 hours</option>
+                                <option value="1">½ day</option>
+                                <option value="2">full day</option>
+                                <option value="3">2 days</option>
+                            </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="column1">
+                          <label for="NoOfTickets">Number of Tickets</label>
+                        </div>
+                        <div class="column2">
+                            <input id="NoOfTickets" name="noOfTickets" min="0" type="number" placeholder="Enter Number of Tickets" onblur="calculateCost();">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="column1">
+                            <label for="date" class="lbdate">Input the check-in date.</label>
+                        </div>
+                        <div class="column2">
+                            <input type="date" id="date"  name="date">
+                        </div>
+                      </div>
+                      <div class="alert" style="display: none;"></div>
+                      <p id="crrntOrder">Cost of the current order : LKR <span id="spCost">0.00</span></p>
+                      <div class="" id="localStorage">
+                        <input  id="addFavourite" type="button" value="Add to favourites" class="">
+                        <input id="retriveFavourite" type="button" value="Order favourite" class="">
+                      </div>
+
+                      <input id="AddOrder" type="button" value="Add to Order" class="submit-btn">
+
+                      <div id="divOrder">
+                        <table id="tbl_order" style="display: none;" >
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>No. of Passes</th>
+                                    <th>Date</th>
+                                    <th>Duration</th>
+                                    <th>Total</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody_order"></tbody>
+                            <tfoot>
+                                <tr id="table_divider">
+                                    <th colspan="4">Food Tokens</th>
+                                    <th colspan="1" id="thFtokens">0</th>
+                                    <th colspan="1" id="pthFtokens">0.00</th>
+                                    <th colspan="1"><a href='javascript:void(0)' style='color:rgb(0, 166, 255);font-weight:bold' onclick='removeFoodTokens();'><img src ='images/trash-bin.png' id ='trashBin' alt ='trashbin' ></a></th>
+                                </tr>
+                                <tr id="">
+                                    <th colspan="4">Annual Passes</th>
+                                    <th colspan="1" id="thApasses">0</th>
+                                    <th colspan="1" id="pthApasses">0.00</th>
+                                    <th colspan="1"><a href='javascript:void(0)' style='color:rgb(0, 166, 255);font-weight:bold' onclick='removeAnuualPasses();'><img src ='images/trash-bin.png' id ='trashBin' alt ='trashbin' ></a></th>
+                                </tr>
+
+                                <tr id="table_divider-final">
+                                    <th colspan="4">Grand Total</th>
+                                    <th colspan="2" style="text-align: center;"> LKR <span id="thGrandTot">0.00</span></th>
+                                    <th colspan="1"></th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                       </div>
+
+                       
+
+                       <input id="checkLoyality" type="button" value="Check Loyalty" class="submit-btn" onclick="showLoyaltyPoints();">
+                       <p id="overallOrder">Cost of the Overall order : LKR <span id="overallGtotal">0.00</span></p>
+                       <input id="placeOrder" type="button" value="Place Order" class="submit-btn">
+
+                </form>
+
             <div class="others">
               <p>Not interested in these? Take a look at:
                 <ul>
@@ -90,5 +256,6 @@
           </ul>
         </nav>
       </footer>
+      <script src="Ticket.js"></script>
   </body>
 </html>
